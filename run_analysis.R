@@ -57,3 +57,4 @@ Tidy_Data_Avg <- dcast(dataset_Melt, Subject + Activity ~ variable, mean)
 write.table  (Tidy_Data_Avg, file = "UCI-HAR-Dataset/tidy_dataset.txt")
 write.table  (names(Tidy_data_Avg), file = "UCI-HAR-Dataset/tidy_var_names.txt")
 
+
