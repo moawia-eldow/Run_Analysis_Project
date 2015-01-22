@@ -1,4 +1,4 @@
-### run_analysis.R
+## run_analysis.R
 
 library(dplyr)
 library(shape2)
@@ -17,7 +17,6 @@ ts_data <- cbind(ts_subject, ts_activity, ts_dataset)
 
 uci_har_data <- rbind (tr_data, ts_data)
 
-
 ## Step2 - To extract only the measurements on the mean and standard deviation 
 ##         for each measurement.
 features_table <- read.table ("UCI-HAR-Dataset/features.txt")
@@ -33,13 +32,11 @@ selected_variables <- unique(c("Subject", "Activity", measures_mean_std))
 
 selected_dataset <- select(uci_har_data, one_of(selected_variables))
 
-
 ## Step3 - To use descriptive activity names to name the activities in the data set.
 activity_table <- read.table ("UCI-HAR-Dataset/activity_labels.txt")
 activity_names <- as.vector(activity_table$V2)
 
 selected_dataset$Activity <- factor (selected_dataset$Activity, labels = activity_names)
-
 
 ## Step4 - To label the data set with descriptive variable names.
 modified_variables <- gsub("-","_",names(selected_dataset))
