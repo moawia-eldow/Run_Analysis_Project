@@ -8,15 +8,15 @@ The goal is to prepare a tidy dataset that can be used for later analysis.
 
 The scripts are divided into 5 steps:
 
-(1) Merging the training and the test sets to create one data set.
+ (1) Merging the training and the test sets to create one data set.
 
-(2)Extracting only the measurements on the mean and standard deviation for each measurement. 
+ (2) Extracting only the measurements on the mean and standard deviation for each measurement. 
 
-(3) Using descriptive activity names to name the activities in the data set
+ (3) Using descriptive activity names to name the activities in the data set
 
-(4) Labelling the data set with descriptive variable names. 
+ (4) Labelling the data set with descriptive variable names. 
 
-(5) Creating a second, independent tidy data set with the average of each variable for each activity and each subject. 
+ (5) Creating a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 The following is the description of all scripts within each step: 
 
