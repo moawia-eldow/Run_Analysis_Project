@@ -1,4 +1,4 @@
-## Study design:
+### Study design:
 ===============
 
 This tidy data was generated from the original dataset of Human Activity Recognition Using Smartphones [1]. The original dataset was collected 
@@ -27,7 +27,7 @@ The original dataset was cleaned to prepare this tidy dataset using the followin
 The resulting tidy dataset is a dataset of average of mean and std measurements for each activity and each subject.
 The tidy dataset contains 180 objects and 68 variables. 
 
-## Code book:
+### Code book:
 ===============
 
 1-  Subject   2 
