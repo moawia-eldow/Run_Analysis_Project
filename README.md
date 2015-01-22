@@ -62,15 +62,15 @@ and send the result to - features_vec by two scripts:
   
   > features_vec <- as.vector(feature_table$V2)
 
--generate a vector of variables of distinct values by adding "Subject" and "Activity" to feature_vec using function make.unique(), and send the result to variables_vec by scripts:
+- generate a vector of variables of distinct values by adding "Subject" and "Activity" to feature_vec using function make.unique(), and send the result to variables_vec by scripts:
 
    > variables_vec <- make.unique(c("Subject", "Activity", feature_vec))
 
--label the names of data frame - uci_har_data with this vector of variables - varibles_vec using function names() by the script:
+- label the names of data frame - uci_har_data with this vector of variables - varibles_vec using function names() by the script:
 
   > names(uci_har_data) <- variables_vec
   
--extract the measures which contains "main()" and "std()" from the names of hci_har_data using the function select_vars() and send the result to vector - measures_mean_std - by the script: 
+- extract the measures which contains "main()" and "std()" from the names of hci_har_data using the function select_vars() and send the result to vector - measures_mean_std - by the script: 
 
  > measures_mean_std <- select_vars(names(uci_har_data), contains("mean()"), contains("std()"))
 
@@ -100,7 +100,7 @@ and send the result to - activity_names by two scripts:
  
   > modified_variables <- gsub("[(][)]","",modified_variables)
 
--then label the names of the dataset  - selected_dataset with this modified names of variables - modified_variables using function names() by the script:
+- then label the names of the dataset  - selected_dataset with this modified names of variables - modified_variables using function names() by the script:
 
   > names(selected_dataset) <- modified_variables
 
